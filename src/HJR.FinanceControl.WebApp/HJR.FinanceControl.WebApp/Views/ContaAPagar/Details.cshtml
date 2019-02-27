@@ -1,0 +1,55 @@
+﻿@model HJR.FinanceControl.WebApp.ViewModels.ContaAPagarViewModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ContaAPagarViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fornecedor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fornecedor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Documento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Documento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DescricaoDocumento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DescricaoDocumento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataVencimento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataVencimento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorTotal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ValorTotal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Situacao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Situacao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
